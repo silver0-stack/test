@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Number guessing game</title>
+        <link rel=stylesheet href="main.css">
+      </head>
+
+      <body>
+        <h1>Number guessing game</h1>
+    
+        <p>We have selected a random number between 1 and 100. 
+            See if you can guess it in 10 turns or fewer. 
+            We'll tell you if your guess was too high or too low.</p>
+    
+        <div class="form">
+            <!--다음의 입력과 버튼을 받고, 추측값을 나중에 받도록 하는 역할-->
+          <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+          <input type="submit" value="Submit guess" class="guessSubmit">
+          <!--<input type=“submit”>는 폼 데이터(form date)를 전송하는 제출 버튼(submit button)을 정의합니다.-->
+          <!--Submit guess라는 제출버튼-->
+        </div>
+    
+        <div class="resultParas">
+        <!--각각 HTML에서 결과 문장을 저장하는 기준이고, 코드상에서 문장에 추가되도록 사용된다.-->
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+        <script src="main.js"></script> <!--<script src="URL"> 태그로 외부의 자바스크립트 파일을 임베드 해올 수 있다.-->
+    </body>
+</hmtl>
